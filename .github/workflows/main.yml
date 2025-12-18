@@ -347,7 +347,7 @@ jobs:
               if docker run -d \
                 --name "$NAME" \
                 --network dria-nodes \
-                --restart on-failure:3 \
+                --restart on-failure:6 \
                 -e DKN_WALLET_SECRET_KEY="$PRIVKEY" \
                 -e DKN_MODELS="$DKN_MODELS" \
                 -e OLLAMA_HOST="http://host.docker.internal" \
