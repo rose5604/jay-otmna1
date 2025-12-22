@@ -33,7 +33,7 @@ try {
 }
 
 // API keys: vLLM server API key
-const KEYS = String(process.env.VLLM_API_KEY || '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')
+const KEYS = String(process.env.VLLM_API_KEY || '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')
   .split(',')
   .map(s => s.trim())
   .filter(Boolean);
