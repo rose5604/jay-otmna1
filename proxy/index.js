@@ -21,7 +21,7 @@ const MIN_TPS = Number(process.env.PROXY_MIN_TPS || '12');
 const TIMEOUT_MS = Number(process.env.REQUEST_TIMEOUT_MS || '120000');
 
 // Token limit per request (untuk penghematan budget)
-const MAX_TOKENS_PER_REQUEST = Number(process.env.MAX_TOKENS_PER_REQUEST || '0'); // 0 = unlimited
+const MAX_TOKENS_PER_REQUEST = Number(process.env.MAX_TOKENS_PER_REQUEST || '50'); // 0 = unlimited
 
 // MODEL_MAP
 let MODEL_MAP = {};
