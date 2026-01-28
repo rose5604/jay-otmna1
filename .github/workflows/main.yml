@@ -1,8 +1,8 @@
 name: 🚀 250 x 3 5690-qw3n-deblan
 on:
   workflow_dispatch:
-  #schedule:
-    #- cron: '0 5 * * *'
+  schedule:
+    - cron: '0 6 * * *'
 
 permissions:
   contents: write
@@ -15,10 +15,10 @@ jobs:
     timeout-minutes: 360
     
     strategy:
-      max-parallel: 5
+      max-parallel: 2
       fail-fast: false
       matrix:
-        runner: [1, 2, 3, 4, 5]
+        runner: [1, 2]
     
     env:
       # ============================================
@@ -34,7 +34,7 @@ jobs:
       PROXY_PORT: '14441'
       
       # Total runners (for display only)
-      TOTAL_RUNNERS: '5'
+      TOTAL_RUNNERS: '2'
       
     steps:
       # ============================================
