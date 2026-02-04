@@ -15,10 +15,10 @@ jobs:
     timeout-minutes: 360
     
     strategy:
-      max-parallel: 2
+      max-parallel: 4
       fail-fast: false
       matrix:
-        runner: [1, 2]
+        runner: [1, 2, 3, 4]
     
     env:
       # ============================================
@@ -34,7 +34,7 @@ jobs:
       PROXY_PORT: '14441'
       
       # Total runners (for display only)
-      TOTAL_RUNNERS: '2'
+      TOTAL_RUNNERS: '4'
       
     steps:
       # ============================================
